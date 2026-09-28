@@ -108,7 +108,7 @@ function Content() {
                 </div>
                 <div></div>
                 {candle && <h2 className='text-2xl mt-6 text-center font-bold font-elegent'>Your wish is off to the stars</h2>}
-                <p className='text-center mt-4 font-caveat text-gray-60 '>{candle ? 'May every beautyful thing you hoped for find its way to you' : 'Click the candle'}</p>
+                <p className='text-center mt-4 font-body text-gray-60 '>{candle ? 'May every beautyful thing you hoped for find its way to you' : 'Click the candle'}</p>
 
             </section>
             <section>
