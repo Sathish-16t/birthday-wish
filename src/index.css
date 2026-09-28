@@ -1,0 +1,112 @@
+@import 'tailwindcss';
+/* @import url('https://fonts.googleapis.com/css2?family=Allura&family=Dancing+Script:wght@400;500;600;700&family=Fredoka:wght@300..700&family=Great+Vibes&family=Lobster&family=Pacifico&family=Poppins:wght@400;500;600;700&family=Satisfy&display=swap');; */
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Baloo+2:wght@400;500;600;700;800&family=Berkshire+Swash&family=Chewy&family=Dancing+Script:wght@400;500;600;700&family=Fredoka:wght@300;400;500;600;700&family=Great+Vibes&family=Lobster&family=Luckiest+Guy&family=Pacifico&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Caveat:wght@400;500;600;700&family=DM+Serif+Display&family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+  margin:0; 
+  
+}
+
+*{
+  box-sizing: border-box;
+}
+.font-birthday {
+  font-family: "Baloo 2", sans-serif;
+}
+
+.font-elegant {
+  font-family: "DM Serif Display", serif;
+}
+
+.font-clean {
+  font-family: "Montserrat", sans-serif;
+}
+
+.font-body {
+  font-family: "Poppins", sans-serif;
+}
+
+.font-handwritten {
+  font-family: "Caveat", cursive;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Caveat:wght@400;500;600;700&family=Dancing+Script:wght@400;500;600;700&family=Great+Vibes&family=Indie+Flower&family=Kalam:wght@300;400;700&family=Pacifico&family=Satisfy&display=swap');
+
+@import "tailwindcss";
+
+.theme{
+  --font-tamil: "Noto Sans Tamil", sans-serif;
+}
+
+.font-caveat {
+  font-family: "Caveat", cursive;
+}
+
+.font-dancing {
+  font-family: "Dancing Script", cursive;
+}
+
+.font-satisfy {
+  font-family: "Satisfy", cursive;
+}
+
+.rotate-y-180{
+  transform: rotateY(180deg);
+}
+
+.font-allura {
+  font-family: "Allura", cursive;
+}
+
+.font-great-vibes {
+  font-family: "Great Vibes", cursive;
+}
+
+.font-kalam {
+  font-family: "Kalam", cursive;
+}
+
+.font-indie {
+  font-family: "Indie Flower", cursive;
+}
+
+.font-pacifico {
+  font-family: "Pacifico", cursive;
+}
+
+
+@keyframes flash {
+  0%   { opacity: 1; }
+  50%  { opacity: 0.3; }
+  100% { opacity: 1; }
+}
+
+.flash-anim {
+  animation: flash 250ms ease-out;
+}
+
+@keyframes flicker {
+  0%, 100% {
+    transform: translateX(-5%) scale(1);
+    opacity: 0.9;
+  }
+  25% {
+    transform: translateX(-5%) scale(1.05, 0.95);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(-5%) scale(0.95, 1.05);
+    opacity: 0.85;
+  }
+  75% {
+    transform: translateX(-5%) scale(1.02, 0.98);
+    opacity: 0.95;
+  }
+}
+
+.flame {
+  animation: flicker 1.2s ease-in-out infinite;
+  transform-origin: bottom center;
+}
