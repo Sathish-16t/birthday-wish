@@ -88,7 +88,7 @@ function Content() {
                 <div className='grid place-items-center mt-12 ' >
                     <span onClick={handleclick} ><img src={photo} alt="" className='bg-white rounded-full w-30 h-30 p-4 border-2 border-dashed border-black-400' />
                     </span> </div>
-                <p className='mt-2 text-center text-gray-500  font-allura'>Click the camera 5 times . {remaining} memories left</p>
+                <p className='mt-2 text-center text-gray-500  font-body'>Click the camera 5 times . {remaining} memories left</p>
                 <div ref={gridRef} className={`grid grid-cols-2 mt-2 gap-2 ${flash ? 'flash-anim' : ""}`}  >{revealed.map((p, i) => (<img src={p} key={i} className={`${i == 0 ? "col-span-2" : ""} " bg-white p-2 tar "`} />))}</div>
             </section>
 
@@ -97,7 +97,7 @@ function Content() {
                     <h3 className='text-center font-bold font-kalam text-blue-600'>One Special </h3>
                     <h1 className='mt-2 text-center text-3xl font-bold font-elegent'>Make a wish</h1>
                     <h1 className='text-center font-bold text-2xl/[0.05] text-blue-600 font-bold'>_____</h1>
-                    <p className='mt-12 text-center font-handwritten text-gray-600'>Close your eyes and thing of something beautiful then blow out the candle</p>
+                    <p className='mt-12 text-center font-body text-gray-600'>Close your eyes and thing of something beautiful then blow out the candle</p>
 
                 </div>
 
@@ -129,14 +129,14 @@ function Content() {
 
             </section>
             <section>
-                <p className='text-center font-bold text-xs mt-14 text-blue-700 font-kalam'>Song for you</p>
+                <p className='text-center font-bold text-sm mt-14 text-blue-700 font-kalam'>Song for you</p>
                 <h3 className='mt-2 text-center text-3xl font-bold font-elegent'>Play for me</h3>
                 <div className='mt-4 p-4 bg-pink-300 rounded grid  gap-2 place-items-center grid-cols-1'>
                     <img src={music1} className='h-15 animate-spin' />
-                    <p className='text-center m0t-4 font-caveat text-gray-60'>One song that always make me think of you</p>
+                    <p className='text-center mt-4 font-body text-gray-60'>One song that always make me think of you</p>
                     <img src={songpic} alt="" className='w-40 h-40 rounded-xl ' />
                     <audio src={song} ref={audioRef} loop ></audio>
-                    <button onClick={() => { !music ? playmusic() : stopmusic(), setMusic(!music) }} className='font-caveat mt-4 bg-white p-2 rounded-full'>{!music ? '▶️ Play Music' : ' ⏸️Stop Music '} </button>
+                    <button onClick={() => { !music ? playmusic() : stopmusic(), setMusic(!music) }} className='font-body mt-4 bg-white p-2 rounded-full'>{!music ? '▶️ Play Music' : ' ⏸️Stop Music '} </button>
 
                 </div>
             </section>
@@ -145,18 +145,18 @@ function Content() {
                 <h2 className='text-center text-2xl font-bold font-allura mt-2'>Everything I hope you get  </h2>
                 <h1 className='text-center font-bold text-2xl/[0.05] text-blue-600 font-bold'>_____</h1>
                 {!open ? <div onClick={() => setOpen(!open)} className={`${open ? 'rotate-y-180' : ''} bg-white mt-4 text-gray-600 text-sm transition-transform duration-700 p-2 w-full text-center shadow-xl rounded-lg h-25 grid place-items-center `}><p className='font-["Noto Sans Tamil"] '>நீ ஆசைப்பட்டவை அனைத்தும் உனக்குக் கிடைக்கட்டும் 🥰</p></div>
-                    : <div onClick={() => setOpen(!open)} className={`${!open ? 'rotate-y-180' : ''} bg-white mt-4 transition-transform duration-700 p-2 w-full text-center shadow-xl rounded-lg h-25 grid place-items-center font-["Noto Sans Tamil"]`}> <p className='font-handwritten'>1 ⭐ <br />Tap to reveal</p></div>}
+                    : <div onClick={() => setOpen(!open)} className={`${!open ? 'rotate-y-180' : ''} bg-white mt-4 transition-transform duration-700 p-2 w-full text-center shadow-xl rounded-lg h-25 grid place-items-center font-["Noto Sans Tamil"]`}> <p className='font-body'>1 ⭐ <br />Click to reveal</p></div>}
 
                 {!open1 ? <div onClick={() => setOpen1(!open1)} className={`${open1 ? 'rotate-y-180' : ''} bg-white mt-4 text-gray-600 text-sm transition-transform duration-700 p-2 w-full text-center shadow-xl rounded-lg h-25 grid place-items-center `}><p className='font-["Noto Sans Tamil"] '>உனக்கும் உன் மனதிற்கும் எந்தத் தீங்கும் ஏற்படாமல் இருக்கட்டும் ✨</p></div>
-                    : <div onClick={() => setOpen1(!open1)} className={`${!open1 ? 'rotate-y-180' : ''} bg-white mt-4 transition-transform duration-700 p-2 w-full text-center shadow-xl rounded-lg h-25 grid place-items-center font-["Noto Sans Tamil"]`}> <p className='font-handwritten'>2  🥰<br />Tap to reveal</p></div>}
+                    : <div onClick={() => setOpen1(!open1)} className={`${!open1 ? 'rotate-y-180' : ''} bg-white mt-4 transition-transform duration-700 p-2 w-full text-center shadow-xl rounded-lg h-25 grid place-items-center font-["Noto Sans Tamil"]`}> <p className='font-body'>2  🥰<br />Click to reveal</p></div>}
 
                 {!open2 ? <div onClick={() => setOpen2(!open2)} className={`${open2 ? 'rotate-y-180' : ''} bg-white mt-4 text-gray-600 text-sm transition-transform duration-700 p-2 w-full text-center shadow-xl rounded-lg h-25 grid place-items-center `}><p className='font-["Noto Sans Tamil"] '>நல்லவர்களைத் தேர்ந்தெடுத்து,
                     தீயவர்களிடமிருந்து விலகி இரு 🤗</p></div>
-                    : <div onClick={() => setOpen2(!open2)} className={`${!open2 ? 'rotate-y-180' : ''} bg-white mt-4 transition-transform duration-700 p-2 w-full text-center shadow-xl rounded-lg h-25 grid place-items-center font-["Noto Sans Tamil"]`}> <p className='font-handwritten'>3 💐 <br />Tap to reveal</p></div>}
+                    : <div onClick={() => setOpen2(!open2)} className={`${!open2 ? 'rotate-y-180' : ''} bg-white mt-4 transition-transform duration-700 p-2 w-full text-center shadow-xl rounded-lg h-25 grid place-items-center font-["Noto Sans Tamil"]`}> <p className='font-body'>3 💐 <br />Click to reveal</p></div>}
 
                 {!open3 ? <div onClick={() => setOpen3(!open3)} className={`${open3 ? 'rotate-y-180' : ''} bg-white mt-4 text-gray-600 text-sm transition-transform duration-700 p-2 w-full text-center shadow-xl rounded-lg h-25 grid place-items-center `}><p className='font-["Noto Sans Tamil"] '>உன் மனதிற்குப் பிடித்ததைச் செய்து,
                     மகிழ்ச்சியாக வாழ் ❤️</p></div>
-                    : <div onClick={() => setOpen3(!open3)} className={`${!open3 ? 'rotate-y-180' : ''} bg-white mt-4 transition-transform duration-700 p-2 w-full text-center shadow-xl rounded-lg h-25 grid place-items-center font-["Noto Sans Tamil"]`}> <p className='font-handwritten'>4  🤎 <br />Tap to reveal</p></div>}
+                    : <div onClick={() => setOpen3(!open3)} className={`${!open3 ? 'rotate-y-180' : ''} bg-white mt-4 transition-transform duration-700 p-2 w-full text-center shadow-xl rounded-lg h-25 grid place-items-center font-["Noto Sans Tamil"]`}> <p className='font-body'>4  🤎 <br />Click to reveal</p></div>}
 
 
 
