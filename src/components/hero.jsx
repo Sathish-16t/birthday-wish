@@ -39,7 +39,7 @@ bg-clip-text text-transparent z-5'>HAAPY<br /> BIRTHDAY</h1>
             <section className ="py-2">
                 <p className ='text-center mt-2 font-semi-bold text-xs font-handwritten text-gray-600'>A Little Surprise Await </p>
                 <h2 className ='text-center mt-2 text-2xl font-bold font-elegent text-2xl '>For Siva Ranjani</h2>
-                <p className ='text-center mt-2  font-bold text-sm bg-white rounded-xl shadow box-border text-blue-800 px-2 py-2 font-kalam font-semibold '> 🔑 Enter The Secret Code To Open It (2909) 💕</p>
+                <p className ='text-center mt-2  font-bold text-sm bg-white rounded-xl shadow box-border text-blue-800 px-2 py-2 font-body font-semibold '> 🔑 Enter The Secret Code To Open It (2909) 💕</p>
                
             </section>
             <section className="grid grid-cols-1 mt-2 justify-items-center">
